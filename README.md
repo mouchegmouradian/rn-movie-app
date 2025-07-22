@@ -1,50 +1,89 @@
-# Welcome to your Expo app 👋
+# Movie App 🎬
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native movie application built with Expo that allows users to discover, search, and save their favorite movies.
 
-## Get started
+> **Note**: This project is based on the [JavaScript Mastery YouTube channel tutorial](https://www.youtube.com/@javascriptmastery). It serves as a learning project and implementation of the concepts taught in the tutorial.
 
-1. Install dependencies
+## Features
 
+- **Home Screen**: Browse trending and latest movies with a beautiful UI
+- **Search**: Search for movies with real-time results
+- **Movie Details**: View detailed information about each movie
+- **Save Movies**: Save your favorite movies for later viewing (not yet implemented)
+- **User Profile**: Manage your account and preferences (not yet implemented)
+
+## Tech Stack
+
+- **React Native** with Expo
+- **TypeScript** for type safety
+- **NativeWind** (Tailwind CSS for React Native) for styling
+- **Expo Router** for navigation
+- **Appwrite** for backend services
+- **React Native Appwrite** for data management
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- Expo CLI
+- iOS Simulator (for iOS development)
+- Android Studio (for Android development)
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone <repository-url>
+   cd rn-movie-app
+   ```
+
+2. Install dependencies
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. Start the development server
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Run on your preferred platform:
+   - **iOS**: Press `i` in the terminal or scan the QR code with Expo Go
+   - **Android**: Press `a` in the terminal or scan the QR code with Expo Go
+   - **Web**: Press `w` in the terminal
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+rn-movie-app/
+├── app/                    # Main app screens using Expo Router
+│   ├── (tabs)/            # Tab navigation screens
+│   │   ├── index.tsx      # Home screen
+│   │   ├── search.tsx     # Search screen
+│   │   ├── saved.tsx      # Saved movies screen
+│   │   └── profile.tsx    # User profile screen
+│   └── movies/            # Movie detail screens
+├── components/            # Reusable UI components
+├── services/             # API and data services
+├── constants/            # App constants and assets
+└── interfaces/           # TypeScript interfaces
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Screenshots
 
-## Learn more
+<!-- Add screenshots here -->
+- [Home Screen](./screenshots/home-screen.png)
+- [Search Screen](./screenshots/search-screen.png)
+- [Movie Details Screen](./screenshots/movie-details-screen.png)
 
-To learn more about developing your project with Expo, look at the following resources:
+## Acknowledgments
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- **JavaScript Mastery**: This project is based on their React Native tutorial series
+- **Expo**: For the amazing development platform
+- **Appwrite**: For backend services
 
-## Join the community
+## License
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
